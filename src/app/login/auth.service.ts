@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class AuthService {
 
-  user!:Observable<any>;
+  public user!:Observable<any>;
 
   constructor(private auth:AngularFireAuth) {
     this.auth.authState.subscribe((user)=>{

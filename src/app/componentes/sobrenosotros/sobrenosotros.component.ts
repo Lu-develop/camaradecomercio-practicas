@@ -13,9 +13,11 @@ import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
 })
 export class SobrenosotrosComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

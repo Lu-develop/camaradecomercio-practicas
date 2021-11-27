@@ -2,8 +2,7 @@
   <ng-template pTemplate="start">
       <img src="https://w7.pngwing.com/pngs/95/723/png-transparent-black-mallet-gavel-computer-icons-judge-miscellaneous-angle-computer-thumbnail.png" height="40" class="p-mr-2">
   </ng-template>
-  <button pButton routerLink="login" label="Iniciar Sesion" class="p-button-text transition-delay-100 transition-colors transition-duration-300 bg-blue-500 hover:bg-yellow-500 text-white hover:text-gray-900
-    flex align-items-center justify-content-center font-bold border-round cursor-pointer "></button>
+  <button *ngIf="!logueado" Button routerLink="login" label="Iniciar Sesion" class="p-button-text transition-delay-100 transition-colors transition-duration-300 bg-blue-500 hover:bg-yellow-500 text-white hover:text-gray-900 flex align-items-center justify-content-center font-bold border-round cursor-pointer "></button>
 </p-menubar>
 
 <router-outlet></router-outlet>
